@@ -1,0 +1,38 @@
+output: columns - (Salesman) name, column with 'yes/'no'
+
+
+steps
+
+- salesman and customer table joined salesman_id 
+   - 
+- compare customer city with salesman city
+
+
+
+1.
+criteria all customer cities == salesman city
+
+WHERE salesman.salesman_id = customer.salesman_id
+AND 
+
+
+
+SELECT city FROM
+Customer, 
+WHERE 
+
+
+
+(last column = 'yes')
+
+UNION
+
+criteria all customer cities != salesman city
+2.
+
+SQL:
+SELECT name, column with 'yes/'no'
+FROM Salesman s
+JOIN Customer c
+
+WHERE 
