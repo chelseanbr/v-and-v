@@ -1,0 +1,24 @@
+int N - input : pos for now
+
+m_1 = length 1
+
+m: num jumps
+
+possible cases: 
+N could be zero --> m = 0
+N = 1, m = 1
+N = 2, at least need m > 1 --> m = 4
+1+2
+
+
+N = 3, m = 2
+N = 4, m = 1+2+3 jumping backward helps
+N = 6, 1+2+3, m = 3
+
+
+
+
+
+0   N
+________
+return int m
