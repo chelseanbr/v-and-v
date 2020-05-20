@@ -1,0 +1,38 @@
+collatz
+
+i : num n, 
+
+even: 1/2
+odd: 3*prev+1
+
+n=2, 2->1, seq 1
+n=3, ->10->5->16->8->4->2->1, seq 7
+n=5, seq 6
+n=7, 22->11->34->
+
+
+reach 1
+
+<10,000 longest sequence
+
+def collatz():
+  num = 10000
+  max_step = 0
+  seq_dict = {}
+  for i in range (10000, 0, -1):
+    curr_num = i
+    step = 0
+    while curr_num != 1:
+      if curr_num in seq_dict:
+        step += seq_dict[curr_num]
+        break
+      elif curr_num % 2 == 0:
+        curr_num = curr_num / 2
+        step += 1
+      else:
+        curr_num = 3 * curr_num + 1
+        step+=1
+     if step > max_step:
+      max_step = step
+      num = i
+  return num
