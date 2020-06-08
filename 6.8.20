@@ -1,0 +1,60 @@
+2 sorted arrays
+combine into 1 sorted
+
+[list a], [list b]
+
+def sort_two_arrays(a, b):
+  two_sorted = a.extend(b)
+  two_sorted = sorted(two_sorted)
+  return two_sorted
+  
+# without python functions:
+* which array is bigger?
+a = [1, 2, 6]
+b = [5, 7, 8, 9]
+two_sorted = [
+
+* iterate through range of smaller array
+* compare elementwise 
+
+range(3)
+- get smaller number from a
+
+index_a --> i = 0
+index_b --> j = 0
+two_sorted = [1, 
+i += 1
+j = 0 
+two_sorted = [1, 2, 
+i += 2
+j=0
+two_sorted = [1, 2, 5
+i = 2
+j += 1 -> j =1
+a = [1, 2, 6]
+b = [5, 6, 7, 8, 9]
+
+def my_sort_two_arrays(a, b):
+  i = 0
+  j = 0 
+  two_sorted = []
+  while i < len(a) and j < len(b):
+    if a[i] < b[j]:
+      two_sorted.append(a[i])
+      i += 1
+    elif b[j] < a[i]:
+      two_sorted.append(b[j])
+      j += 1
+    else: 
+      two_sorted.append(a[i])
+      two_sorted.append(b[j])
+      i += 1
+      j += 1
+  if j < len(b):
+    two_sorted.extend(b[j:len(b))  
+    return two_sorted
+  elif i < len(a):
+    two_sorted.extend(a[i:len(a)) 
+    return two_sorted
+  else:
+    return two_sorted
